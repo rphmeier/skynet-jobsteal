@@ -1,0 +1,9 @@
+[package]
+name = "skynet_jobsteal"
+version = "0.1.0"
+authors = ["rphmeier <rphmeier@gmail.com>"]
+
+[dependencies]
+jobsteal = "0.3"
+num_cpus = "0.2"
+time = "0.1"
