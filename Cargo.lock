@@ -2,14 +2,14 @@
 name = "skynet_jobsteal"
 version = "0.1.0"
 dependencies = [
- "jobsteal 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "jobsteal 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "num_cpus 0.2.10 (registry+https://github.com/rust-lang/crates.io-index)",
  "time 0.1.34 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "jobsteal"
-version = "0.3.1"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "rand 0.3.14 (registry+https://github.com/rust-lang/crates.io-index)",

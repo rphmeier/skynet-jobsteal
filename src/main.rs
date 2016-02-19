@@ -6,7 +6,7 @@ use jobsteal::{make_pool, Spawner};
 
 const NUM_CHILDREN: usize = 10;
 
-fn skynet(spawner: Spawner, dst: &mut u64, num: u64, size: u64) {
+fn skynet(spawner: &Spawner, dst: &mut u64, num: u64, size: u64) {
     if size <= 1 {
         *dst = num;
         return;
@@ -32,7 +32,7 @@ fn main() {
     let mut pool = jobsteal::make_pool(num_cpus::get()).unwrap();
 
     let mut result = 0;
-    skynet(pool.spawner(), &mut result, 0, 1000000);
+    skynet(&pool.spawner(), &mut result, 0, 1000000);
     println!("result = {} in {} ms.", result,
             (time::precise_time_ns() - start) / 1_000_000);
 }
