@@ -2,7 +2,7 @@ extern crate jobsteal;
 extern crate num_cpus;
 extern crate time;
 
-use jobsteal::{make_pool, Spawner};
+use jobsteal::Spawner;
 
 const NUM_CHILDREN: usize = 10;
 
